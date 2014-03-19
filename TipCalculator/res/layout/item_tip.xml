@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+<!-- Screen Design for the SONGS -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+        
+	        <TextView
+	            android:id="@+id/tv_date"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentTop="true"
+	            android:layout_alignRight="@+id/tv_total_bill_per_person"
+	            android:layout_marginTop="10dp"
+	            android:layout_weight="1"
+	            android:gravity="left"
+	            android:text="@string/bill_per_person"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textSize="15sp" />
+		  
+		  <TextView
+		      android:id="@+id/tv_time"
+		      android:layout_width="40dp"
+		      android:layout_height="wrap_content"
+		      android:layout_alignParentTop="true"
+		      android:layout_alignRight="@+id/tv_total_bill_per_person"
+		      android:gravity="right"
+		      android:text="TIme"
+		      android:textAppearance="?android:attr/textAppearanceMedium"
+		      android:textSize="15sp" />
+
+    </LinearLayout>
+
+     <LinearLayout
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="15dp"
+         android:layout_marginTop="5dp" >
+        
+	        <TextView
+	            android:id="@+id/tv_paid_str"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentTop="true"
+	            android:layout_alignRight="@+id/tv_total_bill_per_person"
+	            android:layout_weight="1"
+	            android:gravity="left"
+	            android:text="@string/you_paid"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textSize="15sp" />
+		  
+		  <TextView
+		      android:id="@+id/tv_paid_amount"
+		      android:layout_width="0dp"
+		      android:layout_height="wrap_content"
+		      android:layout_alignParentTop="true"
+		      android:layout_alignRight="@+id/tv_total_bill_per_person"
+		      android:layout_weight="1"
+		      android:gravity="right"
+		      android:text="@string/bill_per_person"
+		      android:textAppearance="?android:attr/textAppearanceMedium"
+		      android:textSize="15sp" />
+
+    </LinearLayout>
+    
+</LinearLayout>
