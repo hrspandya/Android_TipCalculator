@@ -2,10 +2,10 @@ package com.hp.tipcalculator;
 
 import java.text.DecimalFormat;
 
-import android.app.Activity;
 import android.app.TabActivity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -47,6 +47,8 @@ public class MainActivity extends TabActivity {
 		
 		//Getting Bill Amount from USER 
 		final EditText et_bill_amount = (EditText)findViewById(R.id.et_bill_amount);
+		et_bill_amount.setRawInputType(Configuration.KEYBOARD_12KEY);
+		
 		final TextView tv_percent_amount = (TextView)findViewById(R.id.tv_percent_amount);
 		final TextView tv_people_count = (TextView)findViewById(R.id.tv_people_count);
 		
